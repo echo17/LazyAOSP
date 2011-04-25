@@ -17,8 +17,9 @@ read srcdir
 		echo "You will be asked your name and email then it will start syncing."
 		echo "Press Enter to continue"
 		read waka
-			repo init -u git://github.com/SalvageMod/salvage.git
+			repo init -u git://github.com/CyanogenMod/android.git -b gingerbread
 			repo sync -j12
+			git clone https://github.com/koush/proprietary_vendor_htc.git -b gingerbread vendor/htc/
 			echo "You're done syncing!! Please run build.sh to begin compiling."
 		elif [ $srcdir = n ]
 			then
