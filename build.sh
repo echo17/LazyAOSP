@@ -29,8 +29,6 @@ make -j`grep 'processor' /proc/cpuinfo | wc -l` otapackage
 if [ -e out/target/product/${dev}/*.zip ]
 	then
 	echo "Congrats! You will find the rom in out/target/product/${dev}"
-	elif
+	else
 	echo "Something went wrong. Try looking for errors and use your friendly google"
 fi
-
- 
