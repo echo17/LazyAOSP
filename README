@@ -1,0 +1,11 @@
+*** I am in no way involved in CyanogenMod ***
+Visit www.cyanogenmod.com for more information about them.
+
+Make sure you have all the prereqs. If you don't know or haven't installed them. Go here. http://source.android.com/source/initializing.html Also go to the next page and install repo.
+
+Once you are done with that copy sync.sh and build.sh into the directory you want the source code to be.
+./sync.sh (then follow the on screen instructions)
+./build.sh (then follow the on screen instructions)
+And your done!
+
+If you have already run sync.sh once. you dont have to again. Instead before you run ./build.sh Type "repo sync -j10" then run build.sh
