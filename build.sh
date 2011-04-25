@@ -86,5 +86,3 @@ if [ -e out/target/product/${dev}/*.zip ]
 	else
 	echo "Something went wrong. Try looking for errors and use your friendly google"
 fi
-
- 
