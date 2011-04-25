@@ -79,6 +79,7 @@ case $device in
     30) dev=zero;;
 esac
 . build/envsetup.sh
+vendor/cyanogen/get-rommanager
 brunch $dev             
 if [ -e out/target/product/${dev}/*.zip ]
 then
