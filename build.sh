@@ -9,19 +9,18 @@ esac
 echo "Which device do you want to build for?"
 echo " 1 - Supersonic"
 echo " 2 - Incredible"
+echo " 3 - Dream-Sapphire"
 read device
 	case $device in
-	1) . build/envsetup.sh
-		lunch salvage_supersonic-userdebug
-		make clean
-		dev=supersonic
-		;;
-	2) . build/envsetup.sh
-		lunch salvage_incredible-userdebug
-		make clean
-		dev=incredible
-		;;
+	1) dev=supersonic
+	;;
+	2) dev=inc
+	;;
+	3) dev=dream-sapphire
 	esac
+	. build/envsetup.sh
+	lunch salvage_$dev-userdebug
+	make clean
 echo "Everything is setup. Build times depend on your computer."
 echo "Press enter to start compiling"
 read waka
