@@ -2,12 +2,13 @@ clear
 grn=$(tput setaf 2)
 red=$(tput setaf 1)
 rst=$(tput sgr0)
-echo "**${grn}           Welcome to LazyAOSP${rst}           **"
-echo "**   ${red}Make sure you have all the prereqs${rst}    **"
-echo "**    if not visit source.android.com      **"
-echo "** Which device do you want to build for?  **"
-echo "** Make sure this script is in the dir you **"
-echo "** want AOSP source to be in. Is it? (y/n) **"
+echo "**${grn}                    Welcome to LazyAOSP${rst}                    **"
+echo "**                                                           **"
+echo "**            ${red}Make sure you have all the prereqs${rst}             **"
+echo "**             if not visit source.android.com               **"
+echo "**          Which device do you want to build for?           **"
+echo "**    Make sure this script is in the dir you want AOSP in   **"
+echo "** ${red}          Is it in the right director? (y/n)      ${rst}        **"
 read srcdir
         if [ $srcdir = y ]
                 then

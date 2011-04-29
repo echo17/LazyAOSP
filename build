@@ -4,7 +4,8 @@ echo "Have you already run sync.sh? (y/n)"
 read snc
 case $snc in
     y) echo "Ok good you may continue";;
-    n) echo "Please run sync.sh" exit;;
+    n) echo "Please run sync.sh" 
+	exit ;;
 esac
 echo "Which device do you want to build for?"
 echo " 1 - Supersonic"
